@@ -1,0 +1,20 @@
+[project]
+name = "factoryops-domain"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+  "factoryops-config",
+  "pydantic>=2.8",
+  "sqlalchemy>=2.0.35",
+  "uuid6>=2024.7.10",
+]
+
+[tool.uv.sources]
+factoryops-config = { path = "../config", editable = true }
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/factoryops_domain"]

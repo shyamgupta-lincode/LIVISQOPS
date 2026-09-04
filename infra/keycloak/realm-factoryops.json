@@ -1,0 +1,27 @@
+{
+  "realm": "factoryops",
+  "enabled": true,
+  "registrationAllowed": false,
+  "clients": [
+    {
+      "clientId": "factoryops-web",
+      "enabled": true,
+      "publicClient": true,
+      "redirectUris": ["*"],
+      "webOrigins": ["*"],
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": true
+    }
+  ],
+  "users": [
+    {
+      "username": "qe",
+      "email": "qe@factoryops.local",
+      "enabled": true,
+      "emailVerified": true,
+      "firstName": "Quinn",
+      "lastName": "Engineer",
+      "credentials": [{"type": "password", "value": "demo", "temporary": false}]
+    }
+  ]
+}

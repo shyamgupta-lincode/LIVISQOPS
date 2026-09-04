@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://factoryops.local/schemas/events/envelope.schema.json",
+  "title": "FactoryOpsEventEnvelope",
+  "type": "object",
+  "required": ["event_id", "event_type", "schema_version", "occurred_at", "tenant_id", "site_id", "source", "payload"],
+  "properties": {
+    "event_id": {"type": "string"},
+    "event_type": {"type": "string"},
+    "schema_version": {"type": "string"},
+    "occurred_at": {"type": "string"},
+    "tenant_id": {"type": "string"},
+    "site_id": {"type": "string"},
+    "source": {"type": "object"},
+    "payload": {"type": "object"}
+  }
+}

@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 200" role="img" aria-label="QualityOps">
+  <!-- Wordmark -->
+  <text
+    x="240"
+    y="78"
+    text-anchor="middle"
+    font-family="Arial Black, Impact, Trebuchet MS, sans-serif"
+    font-size="54"
+    font-weight="900"
+    font-style="italic"
+    letter-spacing="1.5"
+  >
+    <tspan fill="#31393C">QUALITY</tspan><tspan fill="#3E96F4">OPS</tspan>
+  </text>
+
+  <!-- Chart baseline + bars, centered under wordmark -->
+  <g transform="translate(90, 168)">
+    <line x1="0" y1="0" x2="300" y2="0" stroke="#31393C" stroke-width="3" stroke-linecap="round" />
+
+    <rect x="18" y="-14" width="22" height="14" rx="2" fill="#31393C" opacity="0.22" />
+    <rect x="62" y="-28" width="22" height="28" rx="2" fill="#31393C" opacity="0.34" />
+    <rect x="106" y="-22" width="22" height="22" rx="2" fill="#31393C" opacity="0.46" />
+    <rect x="150" y="-40" width="22" height="40" rx="2" fill="#31393C" opacity="0.58" />
+    <rect x="194" y="-58" width="22" height="58" rx="2" fill="#31393C" opacity="0.72" />
+    <rect x="238" y="-78" width="22" height="78" rx="2" fill="#31393C" opacity="0.9" />
+
+    <path
+      d="M 8 -8 L 72 -34 L 116 -26 L 160 -48 L 204 -66 L 260 -92"
+      fill="none"
+      stroke="#F97316"
+      stroke-width="4.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+    <circle cx="72" cy="-34" r="4.5" fill="#F97316" stroke="#fff" stroke-width="1.5" />
+    <circle cx="116" cy="-26" r="4.5" fill="#F97316" stroke="#fff" stroke-width="1.5" />
+    <circle cx="160" cy="-48" r="4.5" fill="#F97316" stroke="#fff" stroke-width="1.5" />
+    <circle cx="204" cy="-66" r="4.5" fill="#F97316" stroke="#fff" stroke-width="1.5" />
+    <path
+      d="M 248 -88 L 268 -96 L 258 -78"
+      fill="none"
+      stroke="#F97316"
+      stroke-width="4.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+</svg>

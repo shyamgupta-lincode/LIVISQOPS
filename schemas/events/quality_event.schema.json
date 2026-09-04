@@ -1,0 +1,15 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://factoryops.local/schemas/events/quality_event.schema.json",
+  "title": "QualityEventPayload",
+  "type": "object",
+  "required": ["quality_event_id", "status", "severity"],
+  "properties": {
+    "quality_event_id": {"type": "string"},
+    "status": {"type": "string"},
+    "severity": {"type": "string"},
+    "characteristic": {"type": "string"},
+    "origin": {"type": "string"},
+    "anomaly_id": {"type": ["string", "null"]}
+  }
+}

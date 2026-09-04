@@ -1,0 +1,19 @@
+image:
+  api: factoryops/api:0.1.0
+  web: factoryops/web:0.1.0
+ingress:
+  enabled: true
+  domain: localhost
+replicaCount: 1
+postgresql:
+  enabled: true
+clickhouse:
+  enabled: true
+kafka:
+  enabled: true
+minio:
+  enabled: true
+oidc:
+  enabled: true
+temporal:
+  enabled: true

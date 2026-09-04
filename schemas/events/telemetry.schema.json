@@ -1,0 +1,13 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://factoryops.local/schemas/events/telemetry.schema.json",
+  "title": "TelemetryPayload",
+  "type": "object",
+  "required": ["signal", "value"],
+  "properties": {
+    "signal": {"type": "string"},
+    "value": {"type": "number"},
+    "unit": {"type": "string"},
+    "quality": {"type": "string"}
+  }
+}

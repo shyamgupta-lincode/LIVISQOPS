@@ -1,0 +1,12 @@
+{
+  "name": "factoryops-e2e",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test golden-api-path.spec.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.47.2"
+  }
+}

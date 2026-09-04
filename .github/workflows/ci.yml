@@ -1,0 +1,36 @@
+name: CI
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install Python deps
+        run: |
+          python -m pip install -U pip
+          pip install pytest ruff
+          pip install -e packages/config -e packages/domain || true
+          pip install -r apps/api/requirements.txt
+      - name: Unit / contract / security
+        env:
+          PYTHONPATH: apps/api/src:packages/domain/src:packages/config/src
+        run: python -m pytest tests/contract tests/security -q
+      - name: Helm lint/render
+        uses: azure/setup-helm@v4
+        with:
+          version: v3.15.4
+      - run: |
+          helm lint infra/helm/factoryops
+          helm template factoryops infra/helm/factoryops >/tmp/factoryops-render.yaml
+      - name: SBOM (optional)
+        continue-on-error: true
+        run: |
+          if command -v syft >/dev/null; then syft dir:. -o spdx-json > sbom.spdx.json; else echo "SKIP syft"; fi

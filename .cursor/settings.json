@@ -1,0 +1,10 @@
+{
+  "plugins": {
+    "grafana-assistant": {
+      "enabled": true
+    },
+    "nvidia-skills": {
+      "enabled": true
+    }
+  }
+}

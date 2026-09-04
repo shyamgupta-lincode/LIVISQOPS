@@ -1,0 +1,20 @@
+{
+  "topics": [
+    "telemetry.raw",
+    "asset.state",
+    "production.context",
+    "inspection.results",
+    "anomalies.detected",
+    "quality.events",
+    "maintenance.predictions",
+    "workflow.actions",
+    "agent.requests",
+    "agent.results",
+    "knowledge.proposals",
+    "telemetry.raw.dlq",
+    "anomalies.detected.dlq",
+    "quality.events.dlq",
+    "agent.requests.dlq"
+  ],
+  "archive_sink": "minio://raw/events/"
+}
